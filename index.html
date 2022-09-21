@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa sobre métodos de estudo</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Formulário de pesquisa de Álvaro Soares</h1>
+        <h2>Obrigado por colaborar com sua opinião para o aperfeiçoamento dos estudos!</h2>
+    </header>
+
+    <main>
+        <form method="post" action="mailto:devalvarosoares@gmail.com">
+            <section>
+                <fieldset>
+                        <div>
+                            <p class="secao">1) DADOS PESSOAIS.</p>
+                            <h3><label for="cNome">a) Nome</label></h3> 
+                            <input type="text" name="tNome" id="cNome" placeholder="Digite seu nome completo." maxlength="100" required>    <!-- Para os campos de entrada, sera dado a seguinte nomenclatura para os atributos "name" e "id", para o name será t(nome do campo) sendo t = tipo; e para o id sera c(nome do campo) sendo c = classe -->
+
+                            <h3><label for="cIdade">b) Idade</label></h3>
+                            <input type="number" name="tIdade" id="cIdade" value="0" min="0">
+
+                            <h3>c) Sexo</h3>
+                            <input type="radio" name="tSexo" id="cMasculino" value="Masculino"><label for="cMasculino">Masculino</label>    <!-- Para possibilitar que apenas possa escolhida 1 opção do botão de radio, é necessário criar um grupo para as opções abrangidas pelo botão, para isso basta dar o mesmo nome para todas as opções no atributo "name" -->
+                            <input type="radio" name="tSexo" id="cFeminino" value="Feminino"><label for="cFeminino">Feminino</label>
+                            <input type="radio" name="tSexo" id="cOutros" value="Outros"><label for="cOutros">Outros</label>
+                    
+                            <h3>d) UF</h3>   <!-- Completar com o restante dos Estados -->
+                            <select>
+                                <option selected>Escolha seu Estado</option>
+
+                                <optgroup label="Norte">
+                                    <option>Pará</option>
+                                    <option>Amazonas</option>
+                                </optgroup>
+
+                                <optgroup label="Nordeste">
+                                    <option>Maranhão</option>
+                                    <option>Ceará</option>
+                                </optgroup>
+
+                                <optgroup label="Centro-oeste">
+                                    <option>Goiás</option>
+                                </optgroup>
+
+                                <optgroup label="Sudeste">
+                                    <option>Rio de Janeiro</option>
+                                    <option>São Paulo</option>
+                                </optgroup>
+
+                                <optgroup label="Sul">
+                                    <option>Santa Catarina</option>
+                                    <option>Paraná</option>
+                                    <option>Rio Grande do Sul</option>
+                                </optgroup>
+                            </select>
+    
+                            <h3><label for="cTelefone">e) Tel.</label></h3>
+                            <input type="tel" name="tTelefone" id="cTelefone" placeholder="Digite seu número de telefone. - Ex: (DDD) XXXXXXXXX" maxlength="14">
+
+                            <h3><label for="cEmail">f) Email</label></h3>
+                            <input type="email" name="tEmail" id="cEmail" maxlength="40" placeholder="Digite seu Email." required>
+                        </div>
+
+                        <div class="questionario">
+                            <p class="secao">2) QUESTIONÁRIO.</p>
+                            <h3>a) Qual sua experiência em programação front-end?</h3>
+                            Iniciante <input type="range" min="1" max="5" required> Profissional 
+
+                            <h3>b) Quais ferramentas você utiliza?</h3>
+                                <p><input type="checkbox">HTML</p>
+                                <p><input type="checkbox">CSS</p>
+                                <p><input type="checkbox">JavaScript</p>
+                                <p><input type="checkbox">Bootstrap</p>
+                                <p><input type="checkbox">Sass e Compass</p>
+                                <p><input type="checkbox">Node JS</p>
+                                <p><input type="checkbox">React</p>
+                                <p><input type="checkbox">Angular</p>
+                                <p><input type="checkbox">Git / Github</p>
+                                <p><input type="checkbox">Outros</p>
+
+                            <h3>c) Quais métodos de estudo, você recomenda?</h3>
+                            <textarea id="caixa" placeholder="Cite e explique suas técnicas de estudo." rows="5" cols="108" required></textarea>
+                        </div>
+                    
+                        <div>
+                            <p><button>Enviar</button></p>
+                        </div>
+
+                </fieldset>
+            </section>
+        </form>
+    </main>
+
+</body>
+</html>

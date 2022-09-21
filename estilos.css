@@ -1,0 +1,78 @@
+
+body {
+    margin: 0 auto;             /* Para centralizar o formulário */
+    width: 60%;                 /* Reduz o tamanho do documento à 60% para igualar as margens laterais (20% / 20%) */
+    background-image: url(./img/background_reuniao.jpg!d); /* imagem de pano de fundo e suas configurações */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 90%;
+}
+
+/* Header - Título e Subtítulo */
+
+header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+header h1 {
+    line-height: 3px;
+}
+
+/* Formato do formulário */
+
+form {
+    background-color: whitesmoke;
+    height: 1225px;
+    padding-top: 4%;
+    margin-bottom: 50px;
+}
+
+fieldset {
+    width: 90%;
+    height: 1175px;  /* Para desgrudar as bordas do fieldset do campo de formulário assim dando efeito "folha de papel", é necessario: a)definir um tamanho para a tag form, de forma que cubra todos os campos; b) Definir um tamanho menor para o fieldset que o dado para a form; c)Separar eles com a propriedade CSS padding na tag form */
+    margin: 0px 33px /* Move a borda superior do fieldset para baixo */ 
+}
+
+.questionario {
+    padding-top: 20px;
+}
+
+/* Elementos textuais */
+
+h3 {
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+p.secao {
+    font-weight: bold;
+}
+
+#cNome, #cIdade, #cTelefone, #cEmail {
+    width: 810px;
+    height: 20px;
+}
+
+#caixa {
+    padding-top: 15px;
+}
+
+button {
+    position: relative;
+    margin-left: 310px;   /* tamanho e posicionamento do botão */ 
+    width: 25%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-image: url(./img/user.png);            /* Posiciona a imagem dentro do botão */
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: right 33% bottom 45%;
+}
+
+button:hover  {
+    color: rgb(12, 11, 11);                         /* Altera a cor do botão ao passar com mouse por cima */
+   background-color: cadetblue; 
+}
+
